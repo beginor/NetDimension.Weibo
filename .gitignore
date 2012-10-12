@@ -1,6 +1,20 @@
-# Build Folders (you can keep bin if you'd like, to store dlls and pdbs)
-bin
-obj
-
-# mstest test results
-TestResults
+*.suo
+*.manifest
+*.user
+*.pidb
+*.DS_Store
+*.userprefs
+*.cache
+*.xap
+*.Publish.xml
+*.dSYM
+[Tt]est[Rr]esults
+[Oo]bj
+[Oo]utput
+[Bb]in
+[Cc]lient[Bb]in
+[Bb]uild
+[Gg]enerated_[Cc]ode
+[Ll]og
+[Pp]recompiled[Ww]eb
+_[Ss]ite

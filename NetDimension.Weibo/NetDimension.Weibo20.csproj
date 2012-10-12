@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7B795714-40D6-4B2E-A277-CBE13C33E1ED}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NetDimension.Weibo</RootNamespace>
+    <AssemblyName>NetDimension.Weibo</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\NET20\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;NET20</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\NET20\NetDimension.Weibo.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\NET20\</OutputPath>
+    <DefineConstants>NET20</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Release\NET20\NetDimension.Weibo.XML</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>D:\GDEIC Project\ThirdPart Resource\NewtonSoft.Json\v4.5\MonoTouch\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccessToken.cs" />
+    <Compile Include="AsyncCallback.cs" />
+    <Compile Include="Client.cs" />
+    <Compile Include="Entities\comment\Collection.cs" />
+    <Compile Include="Entities\comment\Entity.cs" />
+    <Compile Include="Entities\EntityBase.cs" />
+    <Compile Include="Entities\favorite\Collection.cs" />
+    <Compile Include="Entities\favorite\Entity.cs" />
+    <Compile Include="Entities\favorite\IDCollection.cs" />
+    <Compile Include="Entities\favorite\IDEntity.cs" />
+    <Compile Include="Entities\favorite\TagEntity.cs" />
+    <Compile Include="Entities\friendship\Entity.cs" />
+    <Compile Include="Entities\friendship\Result.cs" />
+    <Compile Include="Entities\GeoEntity.cs" />
+    <Compile Include="Entities\PrivacyEntity.cs" />
+    <Compile Include="Entities\RateLimitStatus.cs" />
+    <Compile Include="Entities\repost\Collection.cs" />
+    <Compile Include="Entities\SchoolEntity.cs" />
+    <Compile Include="Entities\search\App.cs" />
+    <Compile Include="Entities\search\AtUser.cs" />
+    <Compile Include="Entities\search\School.cs" />
+    <Compile Include="Entities\search\Status.cs" />
+    <Compile Include="Entities\search\User.cs" />
+    <Compile Include="Entities\shortUrl\Clicks.cs" />
+    <Compile Include="Entities\shortUrl\CommentComments.cs" />
+    <Compile Include="Entities\shortUrl\CommentCount.cs" />
+    <Compile Include="Entities\shortUrl\Info.cs" />
+    <Compile Include="Entities\shortUrl\Location.cs" />
+    <Compile Include="Entities\shortUrl\Locations.cs" />
+    <Compile Include="Entities\shortUrl\Referers.cs" />
+    <Compile Include="Entities\shortUrl\RefererUrl.cs" />
+    <Compile Include="Entities\shortUrl\ShareCounts.cs" />
+    <Compile Include="Entities\shortUrl\ShareStatuses.cs" />
+    <Compile Include="Entities\shortUrl\Url.cs" />
+    <Compile Include="Entities\status\Collection.cs" />
+    <Compile Include="Entities\status\Count.cs" />
+    <Compile Include="Entities\status\Emotion.cs" />
+    <Compile Include="Entities\status\Entity.cs" />
+    <Compile Include="Entities\status\IDs.cs" />
+    <Compile Include="Entities\tag\Tag.cs" />
+    <Compile Include="Entities\trend\HotTrends.cs" />
+    <Compile Include="Entities\trend\IsFollow.cs" />
+    <Compile Include="Entities\trend\Keyword.cs" />
+    <Compile Include="Entities\trend\Trend.cs" />
+    <Compile Include="Entities\UnreadCountResult.cs" />
+    <Compile Include="Entities\user\Collection.cs" />
+    <Compile Include="Entities\user\Count.cs" />
+    <Compile Include="Entities\user\Entity.cs" />
+    <Compile Include="Entities\user\IDCollection.cs" />
+    <Compile Include="Entities\VerifyNickNameResult.cs" />
+    <Compile Include="Error.cs" />
+    <Compile Include="Interface\AccountAPI.cs" />
+    <Compile Include="Interface\CommentAPI.cs" />
+    <Compile Include="Interface\CommonAPI.cs" />
+    <Compile Include="Interface\Entity\AccountInterface.cs" />
+    <Compile Include="Interface\Entity\CommentInterface.cs" />
+    <Compile Include="Interface\Entity\CommonInterface.cs" />
+    <Compile Include="Interface\Entity\FavoriteInterface.cs" />
+    <Compile Include="Interface\Entity\FriendshipInterface.cs" />
+    <Compile Include="Interface\Entity\SearchInterface.cs" />
+    <Compile Include="Interface\Entity\ShortUrlInterface.cs" />
+    <Compile Include="Interface\Entity\StatusInterface.cs" />
+    <Compile Include="Interface\Entity\SuggestionInterface.cs" />
+    <Compile Include="Interface\Entity\TagInterface.cs" />
+    <Compile Include="Interface\Entity\TrendInterface.cs" />
+    <Compile Include="Interface\Entity\UserInterface.cs" />
+    <Compile Include="Interface\EntityInterfaces.cs" />
+    <Compile Include="Interface\FavoriteAPI.cs" />
+    <Compile Include="Interface\FriendshipAPI.cs" />
+    <Compile Include="Interface\LocationAPI.cs" />
+    <Compile Include="Interface\PlaceAPI.cs" />
+    <Compile Include="Interface\SearchAPI.cs" />
+    <Compile Include="Interface\ShortUrlAPI.cs" />
+    <Compile Include="Interface\StatusAPI.cs" />
+    <Compile Include="Interface\SuggestionAPI.cs" />
+    <Compile Include="Interface\TagAPI.cs" />
+    <Compile Include="Interface\TrendAPI.cs" />
+    <Compile Include="Interface\UserAPI.cs" />
+    <Compile Include="Interface\WeiboAPI.cs" />
+    <Compile Include="Interface\WeiboInterface.cs" />
+    <Compile Include="WeiboException.cs" />
+    <Compile Include="WeiboParameter.cs" />
+    <Compile Include="OAuth.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utility.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Entities\account\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
