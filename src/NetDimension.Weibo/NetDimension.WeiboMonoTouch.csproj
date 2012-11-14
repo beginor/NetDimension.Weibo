@@ -35,9 +35,6 @@
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="monotouch" />
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>..\lib\Newtonsoft.Json.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AccessToken.cs" />
@@ -127,4 +124,10 @@
     <Compile Include="Utility.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <ProjectReference Include="..\..\lib\Newtonsoft.Json\Src\Newtonsoft.Json\Newtonsoft.Json.MonoTouch.csproj">
+      <Project>{4D6197AE-414F-4BDB-AF61-64F65F4557B6}</Project>
+      <Name>Newtonsoft.Json.MonoTouch</Name>
+    </ProjectReference>
+  </ItemGroup>
 </Project>

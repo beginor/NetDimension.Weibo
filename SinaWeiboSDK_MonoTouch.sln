@@ -2,21 +2,60 @@
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "lib", "lib", "{6CF3BFA2-834E-4644-8250-26BB4462A6B6}"
-	ProjectSection(SolutionItems) = preProject
-		lib\Newtonsoft.Json.dll = lib\Newtonsoft.Json.dll
-	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Newtonsoft.Json.MonoTouch", "lib\Newtonsoft.Json\Src\Newtonsoft.Json\Newtonsoft.Json.MonoTouch.csproj", "{4D6197AE-414F-4BDB-AF61-64F65F4557B6}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{CDCE4E40-CA83-4852-B0D4-F23E1A94C098}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetDimension.WeiboMonoTouch", "src\NetDimension.Weibo\NetDimension.WeiboMonoTouch.csproj", "{4FC6486E-692C-4B22-B0A3-286C2FC53601}"
+EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{299737E1-C036-4CA6-8B41-A24DBF9E3250}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeiboTestApp", "test\WeiboTestApp\WeiboTestApp.csproj", "{7DE482DC-D240-4BDD-906C-0313DA17931E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Release|iPhone = Release|iPhone
+		Ad-Hoc|iPhone = Ad-Hoc|iPhone
+		AppStore|iPhone = AppStore|iPhone
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4D6197AE-414F-4BDB-AF61-64F65F4557B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D6197AE-414F-4BDB-AF61-64F65F4557B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D6197AE-414F-4BDB-AF61-64F65F4557B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D6197AE-414F-4BDB-AF61-64F65F4557B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FC6486E-692C-4B22-B0A3-286C2FC53601}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FC6486E-692C-4B22-B0A3-286C2FC53601}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FC6486E-692C-4B22-B0A3-286C2FC53601}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FC6486E-692C-4B22-B0A3-286C2FC53601}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DE482DC-D240-4BDD-906C-0313DA17931E}.Ad-Hoc|iPhone.ActiveCfg = Ad-Hoc|iPhone
+		{7DE482DC-D240-4BDD-906C-0313DA17931E}.Ad-Hoc|iPhone.Build.0 = Ad-Hoc|iPhone
+		{7DE482DC-D240-4BDD-906C-0313DA17931E}.AppStore|iPhone.ActiveCfg = AppStore|iPhone
+		{7DE482DC-D240-4BDD-906C-0313DA17931E}.AppStore|iPhone.Build.0 = AppStore|iPhone
+		{7DE482DC-D240-4BDD-906C-0313DA17931E}.Debug|Any CPU.ActiveCfg = Debug|iPhoneSimulator
+		{7DE482DC-D240-4BDD-906C-0313DA17931E}.Debug|Any CPU.Build.0 = Debug|iPhoneSimulator
+		{7DE482DC-D240-4BDD-906C-0313DA17931E}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{7DE482DC-D240-4BDD-906C-0313DA17931E}.Debug|iPhone.Build.0 = Debug|iPhone
+		{7DE482DC-D240-4BDD-906C-0313DA17931E}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{7DE482DC-D240-4BDD-906C-0313DA17931E}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{7DE482DC-D240-4BDD-906C-0313DA17931E}.Release|Any CPU.ActiveCfg = Release|iPhoneSimulator
+		{7DE482DC-D240-4BDD-906C-0313DA17931E}.Release|Any CPU.Build.0 = Release|iPhoneSimulator
+		{7DE482DC-D240-4BDD-906C-0313DA17931E}.Release|iPhone.ActiveCfg = Release|iPhone
+		{7DE482DC-D240-4BDD-906C-0313DA17931E}.Release|iPhone.Build.0 = Release|iPhone
+		{7DE482DC-D240-4BDD-906C-0313DA17931E}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{7DE482DC-D240-4BDD-906C-0313DA17931E}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
+		{4D6197AE-414F-4BDB-AF61-64F65F4557B6} = {6CF3BFA2-834E-4644-8250-26BB4462A6B6}
+		{4FC6486E-692C-4B22-B0A3-286C2FC53601} = {CDCE4E40-CA83-4852-B0D4-F23E1A94C098}
+		{7DE482DC-D240-4BDD-906C-0313DA17931E} = {299737E1-C036-4CA6-8B41-A24DBF9E3250}
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = test\WeiboTestApp\WeiboTestApp.csproj
 	EndGlobalSection
 EndGlobal
